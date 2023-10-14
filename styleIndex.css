@@ -1,0 +1,89 @@
+:root {
+    --color-button-hover: #0056b3;
+    --color-background: rgba(117, 200, 255, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el marco redondo */
+.profilePhoto {
+    border-radius: 50%;
+    width: 150px; /* Ajusta el tamaño de la imagen según tus necesidades */
+}
+
+/* Estilo para los recuadros de información */
+.info-box {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente para que el texto sea legible */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./Images/backgroundPhoto.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+/* Contenedor principal para el contenido */
+.container {
+    background-color: var(--color-background);
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    max-width: 80%;
+}
+
+/* Estilo para los botones */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #ccc;
+    color: var(--color-button-hover);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #ccc;
+    background-color: var(--color-button-hover);
+}
+
+/* Estilo para el menú de Acerca de Mí */
+.menuSobreMi {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    transition: opacity 0.5s ease-in-out;
+    max-width: 400px;
+}
+
+/* Estilo para el logotipo de Telegram */
+.logoContactMe {
+    display: inline-block;
+    margin-top: 10px;
+    width: 30px; /* Ajusta el tamaño del logotipo según tus necesidades */
+    height: 30px; /* Ajusta la altura automáticamente en función del ancho */
+    cursor: pointer;
+}
+
+.contact-me{
+    padding-top: 15px;
+}

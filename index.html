@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enlaces de interés</title>
+        <link rel="stylesheet" href="./styleIndex.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <img src="./Images/profilePhoto2.png" alt="profilePhoto" class="profilePhoto">
+    
+            <div class="info-box">
+                <h2>Diego Martin Evangeliste</h2>
+                <h3>Software Developer</h3>
+            </div>
+    
+            <div class="enlaces-container"> <!-- Boton y menú de "Sobre mí" -->
+                <button onclick="toggleSobreMi()">Sobre mí</button>
+
+                <div class="menuSobreMi">
+                    <h2>Sobre mí</h2>
+                    <p>Actualmente me encuentro estudiando en la Universidad Nacional del Litoral las carreras de Ingeniería en Informática y Analista en Informática Aplicada.</p>
+                    <br>
+                    <p>Me estoy especializando en desarrollo backend con las tecnologías Java y Spring.</p>
+                    <br>
+                    <p>Me considero una persona con predisposición a mantenerme en constante aprendizaje, excelente comunicación, trabajo en equipo de manera prolija, organizada y bajo presión.</p>
+                    <br>
+                    <p>He participado de múltiples voluntariados, los cuales algunos fueron Universitarios, Rotaract y Scouts de Argentina.</p>
+                    <button class="boton" onclick="toggleSobreMi()">Cerrar</button>
+                </div>
+            </div>
+
+            <div class="enlaces-container"> <!-- Botones a enlaces importantes-->
+                <button onclick="irAEnlace('Proyectos')">Ver mis proyectos de Software</button>
+                <button onclick="irAEnlace('GitHub')">Perfil de GitHub</button>
+                <button onclick="irAEnlace('Linkedin')">Perfil de Linkedin</button>
+            </div>
+
+            <div class="contact-me">
+                <p>Contáctame</p>
+                <a href="https://t.me/DiegoEvangeliste" target="_blank"> <img src="./Logos/telegramLogo.png" alt="Logo de Telegram" class="logoContactMe"> </a> <!-- Telegram -->
+                <a href="mailto:evangelistediego@gmail.com" target="_blank"> <img src="./Logos/gmailLogo.png" alt="Logo de Gmail" class="logoContactMe"> </a> <!-- GMail -->
+                <a href="mailto:evangelistediego@yahoo.com.ar" target="_blank"> <img src="./Logos/yahooLogo.png" alt="Logo de Yahoo" class="logoContactMe"> </a> <!-- Yahoo -->
+            </div>
+
+        </div>
+    </body>
+    </html>

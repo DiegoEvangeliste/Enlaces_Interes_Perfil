@@ -1,0 +1,83 @@
+.button-volver {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.project-container {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-background);
+    margin-bottom: 10px;
+}
+
+.image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.text-container {
+    width: 75%;
+    padding: 0 20px; /* Añade espaciado a tu elección */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido en la mitad derecha */
+}
+
+.title {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+.description {
+    padding-bottom: 10px;
+}
+
+.link {
+    text-align: center; /* Centra el texto del enlace horizontalmente */
+}
+
+.link a {
+    text-decoration:underline;
+    color: black; /* Puedes cambiar el color según tus preferencias */
+}
+
+/* Estilos para la vista de teléfono */
+@media screen and (max-width: 600px) {
+    .project-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column; /* Apila contenido en vista móvil */
+        align-items: center;
+        text-align: center;
+    }
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+    .text-container{
+        width: 100%;
+    }
+}
